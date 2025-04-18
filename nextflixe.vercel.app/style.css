@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Top & Bottom Bar */
+.top-bar,
+.bottom-bar {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.top-bar:hover,
+.bottom-bar:hover {
+  background: linear-gradient(135deg, #005f99, #022b5b);
+  transform: scale(1.01);
+}
+
+/* Flex content inside bars */
+.bar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.bar-content a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.bar-content a h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+/* 
+  }
+  
+  /* Logo */
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Main content */
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 20px 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .bar-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .bar-content a h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    height: 30px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-decoration: #005f99;
+  background-color: #a6c6db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: 0.3s ease;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  text-decoration: #005f99;
+  background-color: #a6c6db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  transition: 0.3s ease;
+}
+
+.button a {
+  color: #070707;
+  text-decoration: none;
+}
+.pulse-button:hover {
+  background-color: #3e64b1;
+}
+.pulse-button a {
+  color: #f80606;
+  text-decoration: none;
+}
+
+.pulse-button a::before {
+  content: "📞 ";
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+.footer {
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  color: white;
+  text-align: center;
+  padding: 10рx;
+  margin-top: 20px;
+}
